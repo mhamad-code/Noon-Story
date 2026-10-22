@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-22T11:21:53.155Z",
+  "generated": "2026-10-22T11:33:23.749Z",
   "user": "mhamad-code",
   "apps": [
     {
@@ -35,7 +35,23 @@
       "stars": 0,
       "url": "https://github.com/mhamad-code/Apk-Acode",
       "lang": "JavaScript",
-      "ver": "Latest build"
+      "ver": "Latest build",
+      "history": [
+        {
+          "tag": "latest",
+          "name": "Latest build",
+          "date": "2026-10-22T10:13:10Z",
+          "notes": "",
+          "files": [
+            {
+              "name": "Acode-Pro.apk",
+              "url": "https://github.com/mhamad-code/Apk-Acode/releases/download/latest/Acode-Pro.apk",
+              "size": 43219152,
+              "dl": 0
+            }
+          ]
+        }
+      ]
     },
     {
       "repo": "Apk",
@@ -61,7 +77,23 @@
       "stars": 0,
       "url": "https://github.com/mhamad-code/Apk",
       "lang": "Kotlin",
-      "ver": "Latest build"
+      "ver": "Latest build",
+      "history": [
+        {
+          "tag": "latest",
+          "name": "Latest build",
+          "date": "2026-10-22T10:12:23Z",
+          "notes": "",
+          "files": [
+            {
+              "name": "DeviceX.apk",
+              "url": "https://github.com/mhamad-code/Apk/releases/download/latest/DeviceX.apk",
+              "size": 14282484,
+              "dl": 2
+            }
+          ]
+        }
+      ]
     },
     {
       "repo": "SY-ai",
@@ -87,7 +119,23 @@
       "stars": 0,
       "url": "https://github.com/mhamad-code/SY-ai",
       "lang": "Kotlin",
-      "ver": "Latest build"
+      "ver": "Latest build",
+      "history": [
+        {
+          "tag": "latest",
+          "name": "Latest build",
+          "date": "2026-10-22T10:06:58Z",
+          "notes": "",
+          "files": [
+            {
+              "name": "SY-ai.apk",
+              "url": "https://github.com/mhamad-code/SY-ai/releases/download/latest/SY-ai.apk",
+              "size": 47039458,
+              "dl": 0
+            }
+          ]
+        }
+      ]
     },
     {
       "repo": "Nexora",
@@ -136,7 +184,41 @@
       "stars": 0,
       "url": "https://github.com/mhamad-code/Nexora",
       "lang": "Kotlin",
-      "ver": "Nexora Latest Build"
+      "ver": "Nexora Latest Build",
+      "history": [
+        {
+          "tag": "latest",
+          "name": "Nexora Latest Build",
+          "date": "2026-10-15T21:06:47Z",
+          "notes": "Automated build (commit `659391c35568b29ae6c210e8a4f9976494ee887c`)\n\n> Based on RikkaHub (AGPL-3.0).\n",
+          "files": [
+            {
+              "name": "app-arm64-v8a-release.apk",
+              "url": "https://github.com/mhamad-code/Nexora/releases/download/latest/app-arm64-v8a-release.apk",
+              "size": 36355985,
+              "dl": 1
+            },
+            {
+              "name": "app-armeabi-v7a-release.apk",
+              "url": "https://github.com/mhamad-code/Nexora/releases/download/latest/app-armeabi-v7a-release.apk",
+              "size": 30906019,
+              "dl": 3
+            },
+            {
+              "name": "app-universal-release.apk",
+              "url": "https://github.com/mhamad-code/Nexora/releases/download/latest/app-universal-release.apk",
+              "size": 50320378,
+              "dl": 1
+            },
+            {
+              "name": "app-x86_64-release.apk",
+              "url": "https://github.com/mhamad-code/Nexora/releases/download/latest/app-x86_64-release.apk",
+              "size": 37025912,
+              "dl": 1
+            }
+          ]
+        }
+      ]
     }
   ],
   "repos": [
@@ -145,7 +227,7 @@
       "description": null,
       "language": "JavaScript",
       "stargazers_count": 0,
-      "pushed_at": "2026-10-22T11:21:37Z",
+      "pushed_at": "2026-10-22T11:33:10Z",
       "html_url": "https://github.com/mhamad-code/Noon-Story",
       "fork": false
     },

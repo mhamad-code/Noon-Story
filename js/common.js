@@ -170,8 +170,31 @@ function build(repo, release, apkFiles, key) {
   };
 }
 
+function historyOf(releases, id) {
+  return releases
+    .filter((r) => !r.draft)
+    .sort((a, b) => new Date(b.published_at || b.created_at) - new Date(a.published_at || a.created_at))
+    .map((r) => {
+      const files = (r.assets || []).filter((a) => /\.apk$/i.test(a.name) && stem(a.name) === id);
+      return {
+        tag: r.tag_name,
+        name: r.name || r.tag_name,
+        date: r.published_at || r.created_at,
+        notes: r.body || "",
+        files: files.map((a) => ({
+          name: a.name,
+          url: a.browser_download_url,
+          size: a.size,
+          dl: a.download_count
+        }))
+      };
+    })
+    .filter((h) => h.files.length)
+    .slice(0, 10);
+}
+
 /* One repository can hold one app, or several apps (one per APK name). */
-function collect(repo, releases) {
+function collect(repo, releases, all = releases) {
   const newestFirst = releases
     .filter((r) => !r.draft)
     .sort((a, b) => new Date(b.published_at || b.created_at) - new Date(a.published_at || a.created_at));
@@ -196,7 +219,11 @@ function collect(repo, releases) {
   }
 
   const isMulti = found.size > 1;
-  return [...found].map(([id, hit]) => build(repo, hit.release, hit.files, isMulti ? id : ""));
+  return [...found].map(([id, hit]) => {
+    const app = build(repo, hit.release, hit.files, isMulti ? id : "");
+    app.history = historyOf(all, id);
+    return app;
+  });
 }
 
 async function getRepoApps(repo) {
@@ -206,7 +233,7 @@ async function getRepoApps(repo) {
     (r) => !r.draft && /^latest$/i.test(r.tag_name) && (r.assets || []).some((a) => /\.apk$/i.test(a.name))
   );
 
-  return collect(repo, latest ? [latest] : releases);
+  return collect(repo, latest ? [latest] : releases, releases);
 }
 
 /* Finds the icon and screenshots inside the repository (single-app repos only). */

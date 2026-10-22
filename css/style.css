@@ -627,3 +627,41 @@ footer a:hover {
     transition: none !important;
   }
 }
+
+
+/* ---------- Version history ---------- */
+
+.history {
+  margin: 0;
+  padding: .4rem 1.2rem;
+  list-style: none;
+  border-radius: 1.8rem;
+}
+
+.ver {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(27, 18, 48, .1);
+}
+
+.ver:last-child {
+  border: 0;
+}
+
+.ver b {
+  display: block;
+  color: var(--deep);
+}
+
+.ver .m {
+  font-size: .82rem;
+  color: var(--muted);
+}
+
+.ver .notes {
+  margin-top: .4rem;
+  font-size: .88rem;
+}

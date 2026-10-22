@@ -50,6 +50,40 @@
         </section>`;
     }
 
+    function historyHTML(app) {
+      const older = (app.history || []).filter((h) => !/^latest$/i.test(h.tag));
+
+      if (!older.length) {
+        return "";
+      }
+
+      const items = older.map((h) => {
+        const file = h.files[0];
+        const notes = h.notes.trim()
+          ? `<p dir="auto" class="notes">${esc(h.notes.trim())}</p>`
+          : "";
+
+        return `
+          <li class="ver">
+            <div>
+              <b>${esc(h.name)}</b>
+              <span class="m">${esc(fmtDate(h.date))} · ${fmtSize(file.size)} · ${fmtNum(file.dl)} downloads</span>
+              ${notes}
+            </div>
+            <a class="btn btn-glass glass sm" href="${esc(file.url)}" download>
+              ${svgIcon("dl")}
+              Download
+            </a>
+          </li>`;
+      }).join("");
+
+      return `
+        <section class="sec">
+          <h2>Version history</h2>
+          <ul class="history glass">${items}</ul>
+        </section>`;
+    }
+
     function infoHTML(app, mainFile, otherFiles) {
       const row = (label, value) => (value ? `<dt>${label}</dt><dd>${value}</dd>` : "");
 
@@ -115,6 +149,8 @@
         </div>
 
         ${screenshotsHTML(app)}
+
+        ${historyHTML(app)}
 
         <div class="two">
           <section class="panel glass">

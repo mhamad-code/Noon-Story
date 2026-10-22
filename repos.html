@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Repositories – NOON Store</title>
+  <meta name="description" content="All public repositories of github.com/mhamad-code.">
+  <meta name="author" content="Muhammad Hamra">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Repositories – mhamad-code">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="repos">
+
+  <main class="wrap">
+
+    <a class="tag glass back" href="index.html">
+      <svg class="ico"><use href="#back"/></svg>
+      Back to store
+    </a>
+
+    <section class="hero" style="padding-top:1.2rem">
+      <h1>
+        Every
+        <span class="hl">repository.</span>
+      </h1>
+      <p>The full list of public projects at github.com/mhamad-code.</p>
+      <label class="search glass">
+        <svg class="ico"><use href="#search"/></svg>
+        <input id="q" type="search" placeholder="Search repositories" aria-label="Search repositories">
+      </label>
+    </section>
+
+    <div id="msg"></div>
+    <div class="grid wide" id="grid"></div>
+
+  </main>
+
+  <script src="js/common.js"></script>
+  <script>
+    const grid = $("#grid");
+    let repos = [];
+
+    grid.innerHTML = '<div class="glass skel"></div>'.repeat(6);
+
+    function repoCard(repo) {
+      const language = repo.language ? `<span class="tag">${esc(repo.language)}</span>` : "";
+
+      return `
+        <a class="card glass" href="${esc(repo.html_url)}" rel="noopener" style="gap:.7rem">
+          <div style="display:flex;justify-content:space-between;gap:.5rem;align-items:center">
+            <span class="tag">${svgIcon("gh")}${repo.fork ? "Fork" : "Repository"}</span>
+            <span style="display:flex;gap:.4rem">
+              ${language}
+              <span class="tag">${svgIcon("star")}${repo.stargazers_count}</span>
+            </span>
+          </div>
+          <b style="white-space:normal;word-break:break-word;font-size:1.15rem">${esc(repo.name)}</b>
+          <span dir="auto" class="m" style="flex:1">${esc(repo.description || "No description yet.")}</span>
+          <span class="m">Updated ${esc(fmtDate(repo.pushed_at))}</span>
+        </a>`;
+    }
+
+    function show(list) {
+      grid.innerHTML = list.map(repoCard).join("");
+    }
+
+    loadRepos()
+      .then((list) => {
+        repos = list;
+        show(repos);
+      })
+      .catch(() => {
+        grid.innerHTML = "";
+        $("#msg").innerHTML = `
+          <div class="glass note">
+            GitHub did not respond (the free API limit may be reached). Try again in a few minutes, or open
+            <a href="https://github.com/${USER}?tab=repositories" rel="noopener"><b>github.com/${USER}</b></a>.
+          </div>`;
+      });
+
+    $("#q").addEventListener("input", (event) => {
+      const text = event.target.value.toLowerCase().trim();
+      show(repos.filter((r) => (r.name + " " + (r.description || "")).toLowerCase().includes(text)));
+    });
+  </script>
+
+</body>
+
+</html>

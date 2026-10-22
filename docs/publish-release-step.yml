@@ -1,0 +1,20 @@
+# Add this to the build workflow of each app repository.
+#
+# 1) Give the job permission to write releases:
+#
+#      permissions:
+#        contents: write
+#
+# 2) Add this step AFTER the step that builds the APK
+#    (change the file names to your real ones):
+
+      - name: Publish to the latest release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Latest build
+          make_latest: true
+          files: |
+            MyApp.apk
+            icon.png
+            screenshots/*.png

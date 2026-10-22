@@ -1,0 +1,629 @@
+/* ==========================================================
+   NOON Store - styles
+   1. Variables   2. Base   3. Glass   4. Navigation
+   5. Buttons     6. Home   7. Cards   8. App page
+   9. Legal pages 10. Footer
+   ========================================================== */
+
+
+/* ---------- 1. Variables ---------- */
+
+:root {
+  --c1: #FFB23E;
+  --c2: #B892FF;
+  --c3: #5EEAD4;
+  --deep: #1B1230;
+  --ink: #221533;
+  --cream: #FFF9F0;
+  --muted: #6b5a85;
+  color-scheme: light;
+}
+
+
+/* ---------- 2. Base ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.55;
+  color: var(--ink);
+  background:
+    radial-gradient(60vmax 50vmax at 85% -10%, rgba(255, 178, 62, .5), transparent 60%),
+    radial-gradient(55vmax 45vmax at -10% 45%, rgba(184, 146, 255, .42), transparent 60%),
+    radial-gradient(50vmax 40vmax at 95% 100%, rgba(94, 234, 212, .42), transparent 60%),
+    var(--cream);
+  background-attachment: fixed;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.1;
+  letter-spacing: -.03em;
+  color: var(--deep);
+}
+
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.2rem;
+}
+
+.ico {
+  width: 1.2rem;
+  height: 1.2rem;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--deep);
+  outline-offset: 3px;
+  border-radius: 12px;
+}
+
+
+/* ---------- 3. Glass ---------- */
+
+.glass {
+  background: linear-gradient(135deg, rgba(255, 255, 255, .65), rgba(255, 255, 255, .24));
+  backdrop-filter: blur(22px) saturate(160%);
+  -webkit-backdrop-filter: blur(22px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, .78);
+  box-shadow:
+    0 18px 50px -18px rgba(27, 18, 48, .28),
+    inset 0 1px 0 rgba(255, 255, 255, .9),
+    inset 0 -8px 20px rgba(184, 146, 255, .12);
+}
+
+.note {
+  margin: 1rem 0;
+  padding: 1rem 1.2rem;
+  border-radius: 1.2rem;
+}
+
+.skel {
+  min-height: 170px;
+  border-radius: 1.6rem;
+  opacity: .55;
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .25;
+  }
+}
+
+
+/* ---------- 4. Navigation ---------- */
+
+header.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: calc(env(safe-area-inset-top, 0px) + .7rem) 1rem 0;
+}
+
+header.nav nav {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: .45rem .5rem .45rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-radius: 999px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--deep);
+}
+
+.logo i {
+  width: 2.1rem;
+  height: 2.1rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--c1), var(--c2));
+}
+
+.links {
+  display: flex;
+  gap: 1.4rem;
+  font-size: .92rem;
+  font-weight: 600;
+}
+
+.links a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .25s;
+}
+
+.links a:hover,
+.links a.on {
+  color: #8b5cf6;
+}
+
+@media (max-width: 800px) {
+  header.nav nav {
+    padding-left: .7rem;
+  }
+
+  .logo {
+    font-size: .95rem;
+  }
+
+  .logo i {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .links {
+    gap: .8rem;
+    font-size: .85rem;
+  }
+
+  .gname {
+    display: none;
+  }
+}
+
+
+/* ---------- 5. Buttons and tags ---------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  padding: .75rem 1.3rem;
+  border: 0;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 700;
+  color: var(--deep);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.btn-sun {
+  background: linear-gradient(135deg, var(--c1), #ff8f5a);
+  box-shadow:
+    0 10px 30px -8px rgba(255, 178, 62, .9),
+    inset 0 1px 0 rgba(255, 255, 255, .7);
+}
+
+.btn-sun:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 40px -8px rgba(255, 178, 62, 1);
+}
+
+.btn-glass:hover {
+  background: rgba(255, 255, 255, .88);
+  transform: translateY(-2px);
+}
+
+.sm {
+  padding: .55rem 1rem;
+  font-size: .88rem;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: .3rem;
+  padding: .2rem .65rem;
+  border-radius: 999px;
+  background: rgba(27, 18, 48, .07);
+  font-size: .75rem;
+  font-weight: 600;
+}
+
+.back {
+  margin-top: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .25s;
+}
+
+.back:hover {
+  background: rgba(255, 255, 255, .9);
+}
+
+
+/* ---------- 6. Home: hero, search, rows ---------- */
+
+.hero {
+  padding: 3.2rem 0 1.5rem;
+}
+
+.hero h1 {
+  max-width: 14ch;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  font-weight: 900;
+}
+
+.hero p {
+  max-width: 46ch;
+  margin: .9rem 0 1.5rem;
+  color: #4a3a63;
+}
+
+.hl {
+  background: linear-gradient(135deg, var(--c1), #ff7a8a 45%, var(--c2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.search {
+  max-width: 520px;
+  padding: .35rem 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  border-radius: 999px;
+}
+
+.search input {
+  flex: 1;
+  min-width: 0;
+  padding: .6rem 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: var(--deep);
+}
+
+.search input:focus-visible {
+  outline: 0;
+}
+
+.search:focus-within {
+  box-shadow:
+    0 0 0 3px var(--c2),
+    0 18px 50px -18px rgba(27, 18, 48, .28);
+}
+
+.sec {
+  margin: 2.2rem 0;
+}
+
+.sec h2 {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: baseline;
+  gap: .7rem;
+  font-size: 1.55rem;
+  font-weight: 800;
+}
+
+.sec h2 small {
+  font-size: .85rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  color: var(--muted);
+}
+
+/* A row holds 5 apps side by side; on small screens it scrolls sideways. */
+.row5 {
+  padding: .5rem .2rem 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+}
+
+.row5 > * {
+  scroll-snap-align: start;
+}
+
+.grid.wide {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+
+/* ---------- 7. App cards and icons ---------- */
+
+.card {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .55rem;
+  border-radius: 1.6rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .35s cubic-bezier(.2, .8, .2, 1);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 28px 60px -20px rgba(184, 146, 255, .6),
+    0 0 0 1px #fff,
+    inset 0 1px 0 #fff;
+}
+
+.card b {
+  overflow: hidden;
+  font-size: .98rem;
+  color: var(--deep);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card .m {
+  font-size: .8rem;
+  color: var(--muted);
+}
+
+.ic {
+  position: relative;
+  width: var(--s, 76px);
+  height: var(--s, 76px);
+  flex: none;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 24%;
+  background: var(--g);
+  box-shadow:
+    0 10px 24px -10px rgba(27, 18, 48, .45),
+    inset 0 1px 0 rgba(255, 255, 255, .7);
+}
+
+.ic b {
+  font-size: calc(var(--s, 76px) * .45);
+  font-weight: 900;
+  color: var(--deep);
+}
+
+.ic img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #fff;
+}
+
+
+/* ---------- 8. App page ---------- */
+
+.top {
+  padding: 2.4rem 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.top h1 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: 900;
+}
+
+.top .by {
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.top .by:hover {
+  color: #8b5cf6;
+}
+
+.stats {
+  margin: 1.2rem 0;
+  padding: .9rem 0;
+  display: flex;
+  overflow-x: auto;
+  border-radius: 1.4rem;
+}
+
+.stats div {
+  flex: 1;
+  min-width: 110px;
+  padding: 0 .8rem;
+  text-align: center;
+  border-right: 1px solid rgba(27, 18, 48, .12);
+}
+
+.stats div:last-child {
+  border: 0;
+}
+
+.stats b {
+  display: block;
+  font-size: 1.15rem;
+  color: var(--deep);
+}
+
+.stats span {
+  font-size: .78rem;
+  color: var(--muted);
+}
+
+.shots {
+  padding: .4rem .2rem 1rem;
+  display: flex;
+  gap: .9rem;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+}
+
+.shots a {
+  flex: none;
+  scroll-snap-align: start;
+}
+
+.shots img {
+  display: block;
+  width: auto;
+  height: min(420px, 62vw);
+  border: 1px solid rgba(255, 255, 255, .9);
+  border-radius: 1.4rem;
+  background: #fff;
+  box-shadow: 0 18px 40px -18px rgba(27, 18, 48, .45);
+  transition: all .3s;
+}
+
+.shots a:hover img {
+  transform: scale(1.02);
+}
+
+.two {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .two {
+    grid-template-columns: 1fr;
+  }
+}
+
+.panel {
+  padding: 1.5rem;
+  border-radius: 1.8rem;
+}
+
+.panel h2 {
+  margin-bottom: .8rem;
+  font-size: 1.25rem;
+}
+
+.notes {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+dl {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: .55rem 1rem;
+  font-size: .92rem;
+}
+
+dt {
+  color: var(--muted);
+}
+
+dd {
+  margin: 0;
+  font-weight: 600;
+  text-align: right;
+  word-break: break-word;
+}
+
+.vers {
+  margin-top: 1rem;
+  display: grid;
+  gap: .6rem;
+}
+
+
+/* ---------- 9. Legal pages ---------- */
+
+.legal {
+  max-width: 760px;
+  margin: 1.2rem auto 0;
+}
+
+.legal h1 {
+  margin-bottom: .4rem;
+  font-size: clamp(1.9rem, 5vw, 2.8rem);
+  font-weight: 900;
+}
+
+.legal h2 {
+  margin: 1.5rem 0 .4rem;
+  font-size: 1.15rem;
+}
+
+.legal p,
+.legal li {
+  color: #3d2f55;
+}
+
+.legal .panel {
+  margin-top: 1rem;
+}
+
+
+/* ---------- 10. Footer ---------- */
+
+footer {
+  margin: 4rem 0 2rem;
+}
+
+footer .glass {
+  padding: 1.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  border-radius: 2rem;
+  font-size: .88rem;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer a:hover {
+  color: #8b5cf6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

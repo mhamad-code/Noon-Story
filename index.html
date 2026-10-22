@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>NOON Store – Apps by Muhammad Hamra (mhamad-code)</title>
+  <meta name="description" content="Download free Android apps by Muhammad Hamra, published as GitHub releases at github.com/mhamad-code.">
+  <meta name="author" content="Muhammad Hamra">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NOON Store – Apps by mhamad-code">
+  <meta property="og:description" content="A personal app store powered by GitHub releases.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="store">
+
+  <main class="wrap">
+
+    <section class="hero">
+      <h1>
+        Your apps,
+        <span class="hl">in daylight.</span>
+      </h1>
+      <p>
+        Every app by Muhammad Hamra, pulled live from the latest release
+        of each repository at github.com/mhamad-code.
+      </p>
+      <label class="search glass">
+        <svg class="ico"><use href="#search"/></svg>
+        <input id="q" type="search" placeholder="Search apps" aria-label="Search apps">
+      </label>
+    </section>
+
+    <div id="msg"></div>
+    <div id="rows" aria-busy="true"></div>
+
+  </main>
+
+  <script src="js/common.js"></script>
+  <script>
+    const rows = $("#rows");
+    const message = $("#msg");
+    const PER_ROW = 5;
+    let apps = [];
+
+    // Loading placeholders
+    rows.innerHTML = `
+      <section class="sec">
+        <div class="row5">
+          ${'<div class="glass skel"></div>'.repeat(PER_ROW)}
+        </div>
+      </section>`;
+
+    // Draw the apps, five per row. The sixth app starts a new section.
+    function show(list, isSearch) {
+      rows.setAttribute("aria-busy", "false");
+
+      if (!list.length) {
+        rows.innerHTML = '<div class="glass note">No apps found.</div>';
+        return;
+      }
+
+      let html = "";
+
+      for (let i = 0; i < list.length; i += PER_ROW) {
+        const isFirst = i === 0;
+        let title = isFirst ? "New &amp; updated" : "More apps";
+        if (isSearch) {
+          title = isFirst ? "Results" : "More results";
+        }
+        const count = isFirst
+          ? `<small>${list.length} ${list.length === 1 ? "app" : "apps"}</small>`
+          : "";
+
+        html += `
+          <section class="sec">
+            <h2>${title} ${count}</h2>
+            <div class="row5">
+              ${list.slice(i, i + PER_ROW).map(appCard).join("")}
+            </div>
+          </section>`;
+      }
+
+      rows.innerHTML = html;
+    }
+
+    function showNote(html) {
+      message.innerHTML += `<div class="glass note">${html}</div>`;
+    }
+
+    loadApps()
+      .then((list) => {
+        apps = list;
+
+        if (loadApps.failed) {
+          showNote("Some repositories could not be checked (GitHub API limit). Reload in a few minutes to see every app.");
+        }
+
+        if (!list.length) {
+          rows.innerHTML = "";
+          showNote(
+            "No apps yet. Publish a GitHub <b>release</b> with an .apk file in any repository of " +
+            USER + " and it will appear here automatically."
+          );
+          return;
+        }
+
+        show(list, false);
+      })
+      .catch(() => {
+        rows.innerHTML = "";
+        showNote(
+          'GitHub did not respond (the free API limit may be reached). Try again in a few minutes, or open ' +
+          '<a href="https://github.com/' + USER + '?tab=repositories" rel="noopener"><b>github.com/' + USER + "</b></a>."
+        );
+      });
+
+    // Search box
+    $("#q").addEventListener("input", (event) => {
+      const text = event.target.value.toLowerCase().trim();
+
+      if (!text) {
+        show(apps, false);
+        return;
+      }
+
+      const matches = apps.filter((a) => (a.name + " " + a.desc).toLowerCase().includes(text));
+      show(matches, true);
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>App – NOON Store</title>
+  <meta name="description" content="Download this app from the GitHub releases of mhamad-code.">
+  <meta name="author" content="Muhammad Hamra">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="App on NOON Store">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="store">
+
+  <main class="wrap" id="app">
+    <div class="glass skel" style="margin-top:3rem;min-height:260px"></div>
+  </main>
+
+  <script src="js/common.js"></script>
+  <script>
+    const root = $("#app");
+    const params = new URLSearchParams(location.search);
+    const repoName = params.get("app");
+    const appKey = params.get("k") || "";
+
+    function fail(text) {
+      root.innerHTML = `
+        <div class="glass note" style="margin-top:3rem">
+          ${text}
+          <a href="index.html"><b>Back to the store</b></a>
+        </div>`;
+    }
+
+    function screenshotsHTML(app) {
+      if (!app.shots.length) {
+        return "";
+      }
+
+      const items = app.shots.map((src, i) => `
+        <a href="${esc(src)}" target="_blank" rel="noopener" aria-label="Screenshot ${i + 1}">
+          <img src="${esc(src)}" alt="${esc(app.name)} screenshot ${i + 1}" loading="lazy">
+        </a>`).join("");
+
+      return `
+        <section class="sec">
+          <h2>Screenshots</h2>
+          <div class="shots">${items}</div>
+        </section>`;
+    }
+
+    function infoHTML(app, mainFile, otherFiles) {
+      const row = (label, value) => (value ? `<dt>${label}</dt><dd>${value}</dd>` : "");
+
+      const others = otherFiles.length
+        ? `
+          <div class="vers">
+            <b>Other builds</b>
+            ${otherFiles.map((f) => `
+              <a class="btn btn-glass glass sm" href="${esc(f.url)}" download>
+                ${svgIcon("dl")}
+                ${esc(f.name)} · ${fmtSize(f.size)}
+              </a>`).join("")}
+          </div>`
+        : "";
+
+      return `
+        <section class="panel glass">
+          <h2>App info</h2>
+          <dl>
+            ${row("Developer", "Muhammad Hamra")}
+            ${row("Version", esc(app.ver))}
+            ${row("Released", esc(fmtDate(app.updated)))}
+            ${row("File", esc(mainFile.name))}
+            ${row("Language", esc(app.lang))}
+            ${row("License", esc(app.license))}
+            ${row("Repository", `<a href="${esc(app.url)}" rel="noopener">${USER}/${esc(app.repo)}</a>`)}
+          </dl>
+          ${others}
+        </section>`;
+    }
+
+    function pageHTML(app) {
+      const [mainFile, ...otherFiles] = app.apk;
+      const description = app.desc ? `<p dir="auto" style="margin-top:0">${esc(app.desc)}</p>` : "";
+      const notes = app.notes.trim() || "Open the source code to read more about this app.";
+
+      return `
+        <a class="tag glass back" href="index.html">${svgIcon("back")}Store</a>
+
+        <div class="top">
+          ${icon(app, 120)}
+          <div style="flex:1;min-width:220px">
+            <h1>${esc(app.name)}</h1>
+            <a class="by" href="https://github.com/${USER}" rel="noopener">${USER}</a>
+            <div style="margin-top:1rem;display:flex;gap:.7rem;flex-wrap:wrap">
+              <a class="btn btn-sun" href="${esc(mainFile.url)}" download>
+                ${svgIcon("dl")}
+                Download APK · ${fmtSize(mainFile.size)}
+              </a>
+              <a class="btn btn-glass glass" href="${esc(app.url)}" rel="noopener">
+                ${svgIcon("gh")}
+                Source code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats glass">
+          <div><b>${fmtNum(app.dl)}</b><span>Downloads</span></div>
+          <div><b>${fmtSize(app.size)}</b><span>Size</span></div>
+          <div><b>${fmtNum(app.stars)}</b><span>Stars</span></div>
+          <div><b>${esc(fmtDate(app.updated))}</b><span>Updated</span></div>
+        </div>
+
+        ${screenshotsHTML(app)}
+
+        <div class="two">
+          <section class="panel glass">
+            <h2>About this app</h2>
+            ${description}
+            <p dir="auto" class="notes">${esc(notes)}</p>
+          </section>
+          ${infoHTML(app, mainFile, otherFiles)}
+        </div>`;
+    }
+
+    async function main() {
+      if (!repoName) {
+        fail("No app selected.");
+        return;
+      }
+
+      const app = await findApp(repoName, appKey);
+      if (!app) {
+        fail("This app has no release with an APK.");
+        return;
+      }
+
+      document.title = app.name + " – NOON Store";
+      root.innerHTML = pageHTML(app);
+    }
+
+    main().catch(() => {
+      fail("GitHub did not respond (the free API limit may be reached). Try again in a few minutes.");
+    });
+  </script>
+
+</body>
+
+</html>

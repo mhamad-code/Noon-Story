@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-22T19:38:00.899Z",
+  "generated": "2026-10-22T22:49:49.229Z",
   "user": "mhamad-code",
   "apps": [
     {
@@ -167,7 +167,7 @@
           "name": "app-universal-release.apk",
           "url": "https://github.com/mhamad-code/Nexora/releases/download/latest/app-universal-release.apk",
           "size": 50320378,
-          "dl": 1
+          "dl": 3
         },
         {
           "name": "app-x86_64-release.apk",
@@ -178,7 +178,7 @@
       ],
       "notes": "Automated build (commit `659391c35568b29ae6c210e8a4f9976494ee887c`)\n\n> Based on RikkaHub (AGPL-3.0).\n",
       "updated": "2026-10-15T21:06:47Z",
-      "dl": 6,
+      "dl": 8,
       "size": 36355985,
       "license": "AGPL-3.0",
       "stars": 0,
@@ -208,7 +208,7 @@
               "name": "app-universal-release.apk",
               "url": "https://github.com/mhamad-code/Nexora/releases/download/latest/app-universal-release.apk",
               "size": 50320378,
-              "dl": 1
+              "dl": 3
             },
             {
               "name": "app-x86_64-release.apk",
@@ -222,6 +222,24 @@
     }
   ],
   "repos": [
+    {
+      "name": "noon_study",
+      "description": null,
+      "language": "Dart",
+      "stargazers_count": 0,
+      "pushed_at": "2026-10-22T21:39:37Z",
+      "html_url": "https://github.com/mhamad-code/noon_study",
+      "fork": false
+    },
+    {
+      "name": "Noon-Story",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "pushed_at": "2026-10-22T19:38:02Z",
+      "html_url": "https://github.com/mhamad-code/Noon-Story",
+      "fork": false
+    },
     {
       "name": "Nexora-docs",
       "description": null,
@@ -238,15 +256,6 @@
       "stargazers_count": 0,
       "pushed_at": "2026-10-22T19:07:42Z",
       "html_url": "https://github.com/mhamad-code/Nexora",
-      "fork": false
-    },
-    {
-      "name": "Noon-Story",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 0,
-      "pushed_at": "2026-10-22T15:56:15Z",
-      "html_url": "https://github.com/mhamad-code/Noon-Story",
       "fork": false
     },
     {

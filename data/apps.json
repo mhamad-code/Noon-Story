@@ -1,6 +1,333 @@
 {
-  "generated": null,
+  "generated": "2026-10-22T11:21:53.155Z",
   "user": "mhamad-code",
-  "apps": [],
-  "repos": []
+  "apps": [
+    {
+      "repo": "Apk-Acode",
+      "key": "",
+      "name": "Apk Acode",
+      "desc": "",
+      "icon": "https://raw.githubusercontent.com/mhamad-code/Apk-Acode/main/res/logo.png",
+      "branch": "main",
+      "shots": [
+        "https://raw.githubusercontent.com/mhamad-code/Apk-Acode/main/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png",
+        "https://raw.githubusercontent.com/mhamad-code/Apk-Acode/main/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png",
+        "https://raw.githubusercontent.com/mhamad-code/Apk-Acode/main/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png",
+        "https://raw.githubusercontent.com/mhamad-code/Apk-Acode/main/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png",
+        "https://raw.githubusercontent.com/mhamad-code/Apk-Acode/main/fastlane/metadata/android/en-US/images/phoneScreenshots/5.png",
+        "https://raw.githubusercontent.com/mhamad-code/Apk-Acode/main/fastlane/metadata/android/en-US/images/phoneScreenshots/6.png",
+        "https://raw.githubusercontent.com/mhamad-code/Apk-Acode/main/fastlane/metadata/android/en-US/images/phoneScreenshots/7.png",
+        "https://raw.githubusercontent.com/mhamad-code/Apk-Acode/main/fastlane/metadata/android/en-US/images/phoneScreenshots/8.png"
+      ],
+      "apk": [
+        {
+          "name": "Acode-Pro.apk",
+          "url": "https://github.com/mhamad-code/Apk-Acode/releases/download/latest/Acode-Pro.apk",
+          "size": 43219152,
+          "dl": 0
+        }
+      ],
+      "notes": "",
+      "updated": "2026-10-22T10:13:10Z",
+      "dl": 0,
+      "size": 43219152,
+      "license": "MIT",
+      "stars": 0,
+      "url": "https://github.com/mhamad-code/Apk-Acode",
+      "lang": "JavaScript",
+      "ver": "Latest build"
+    },
+    {
+      "repo": "Apk",
+      "key": "",
+      "name": "Apk",
+      "desc": "",
+      "icon": "https://raw.githubusercontent.com/mhamad-code/Apk/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+      "branch": "main",
+      "shots": [],
+      "apk": [
+        {
+          "name": "DeviceX.apk",
+          "url": "https://github.com/mhamad-code/Apk/releases/download/latest/DeviceX.apk",
+          "size": 14282484,
+          "dl": 2
+        }
+      ],
+      "notes": "",
+      "updated": "2026-10-22T10:12:23Z",
+      "dl": 2,
+      "size": 14282484,
+      "license": "",
+      "stars": 0,
+      "url": "https://github.com/mhamad-code/Apk",
+      "lang": "Kotlin",
+      "ver": "Latest build"
+    },
+    {
+      "repo": "SY-ai",
+      "key": "",
+      "name": "SY Ai",
+      "desc": "",
+      "icon": "https://raw.githubusercontent.com/mhamad-code/SY-ai/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp",
+      "branch": "main",
+      "shots": [],
+      "apk": [
+        {
+          "name": "SY-ai.apk",
+          "url": "https://github.com/mhamad-code/SY-ai/releases/download/latest/SY-ai.apk",
+          "size": 47039458,
+          "dl": 0
+        }
+      ],
+      "notes": "",
+      "updated": "2026-10-22T10:06:58Z",
+      "dl": 0,
+      "size": 47039458,
+      "license": "MIT",
+      "stars": 0,
+      "url": "https://github.com/mhamad-code/SY-ai",
+      "lang": "Kotlin",
+      "ver": "Latest build"
+    },
+    {
+      "repo": "Nexora",
+      "key": "",
+      "name": "Nexora",
+      "desc": "",
+      "icon": "https://raw.githubusercontent.com/mhamad-code/Nexora/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+      "branch": "main",
+      "shots": [
+        "https://raw.githubusercontent.com/mhamad-code/Nexora/main/material3/material-color-utilities/dart/screenshots/material_you_1.png",
+        "https://raw.githubusercontent.com/mhamad-code/Nexora/main/material3/material-color-utilities/dart/screenshots/material_you_2.png",
+        "https://raw.githubusercontent.com/mhamad-code/Nexora/main/material3/material-color-utilities/dart/screenshots/material_you_3.png",
+        "https://raw.githubusercontent.com/mhamad-code/Nexora/main/material3/material-color-utilities/dart/screenshots/material_you_4.png"
+      ],
+      "apk": [
+        {
+          "name": "app-arm64-v8a-release.apk",
+          "url": "https://github.com/mhamad-code/Nexora/releases/download/latest/app-arm64-v8a-release.apk",
+          "size": 36355985,
+          "dl": 1
+        },
+        {
+          "name": "app-armeabi-v7a-release.apk",
+          "url": "https://github.com/mhamad-code/Nexora/releases/download/latest/app-armeabi-v7a-release.apk",
+          "size": 30906019,
+          "dl": 3
+        },
+        {
+          "name": "app-universal-release.apk",
+          "url": "https://github.com/mhamad-code/Nexora/releases/download/latest/app-universal-release.apk",
+          "size": 50320378,
+          "dl": 1
+        },
+        {
+          "name": "app-x86_64-release.apk",
+          "url": "https://github.com/mhamad-code/Nexora/releases/download/latest/app-x86_64-release.apk",
+          "size": 37025912,
+          "dl": 1
+        }
+      ],
+      "notes": "Automated build (commit `659391c35568b29ae6c210e8a4f9976494ee887c`)\n\n> Based on RikkaHub (AGPL-3.0).\n",
+      "updated": "2026-10-15T21:06:47Z",
+      "dl": 6,
+      "size": 36355985,
+      "license": "AGPL-3.0",
+      "stars": 0,
+      "url": "https://github.com/mhamad-code/Nexora",
+      "lang": "Kotlin",
+      "ver": "Nexora Latest Build"
+    }
+  ],
+  "repos": [
+    {
+      "name": "Noon-Story",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "pushed_at": "2026-10-22T11:21:37Z",
+      "html_url": "https://github.com/mhamad-code/Noon-Story",
+      "fork": false
+    },
+    {
+      "name": "Apk-Acode",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "pushed_at": "2026-10-22T10:13:09Z",
+      "html_url": "https://github.com/mhamad-code/Apk-Acode",
+      "fork": false
+    },
+    {
+      "name": "Apk",
+      "description": null,
+      "language": "Kotlin",
+      "stargazers_count": 0,
+      "pushed_at": "2026-10-22T10:12:23Z",
+      "html_url": "https://github.com/mhamad-code/Apk",
+      "fork": false
+    },
+    {
+      "name": "SY-ai",
+      "description": null,
+      "language": "Kotlin",
+      "stargazers_count": 0,
+      "pushed_at": "2026-10-22T10:06:58Z",
+      "html_url": "https://github.com/mhamad-code/SY-ai",
+      "fork": false
+    },
+    {
+      "name": "Nexora",
+      "description": null,
+      "language": "Kotlin",
+      "stargazers_count": 0,
+      "pushed_at": "2026-10-21T23:23:33Z",
+      "html_url": "https://github.com/mhamad-code/Nexora",
+      "fork": false
+    },
+    {
+      "name": "Nexora-docs",
+      "description": null,
+      "language": "HTML",
+      "stargazers_count": 0,
+      "pushed_at": "2026-10-20T19:09:40Z",
+      "html_url": "https://github.com/mhamad-code/Nexora-docs",
+      "fork": false
+    },
+    {
+      "name": "docs",
+      "description": null,
+      "language": "MDX",
+      "stargazers_count": 0,
+      "pushed_at": "2026-10-20T10:49:28Z",
+      "html_url": "https://github.com/mhamad-code/docs",
+      "fork": false
+    },
+    {
+      "name": "mcp-kotlin-sdk",
+      "description": "The official Kotlin SDK for Model Context Protocol servers and clients. Maintained in collaboration with JetBrains",
+      "language": null,
+      "stargazers_count": 0,
+      "pushed_at": "2026-10-10T03:20:35Z",
+      "html_url": "https://github.com/mhamad-code/mcp-kotlin-sdk",
+      "fork": true
+    },
+    {
+      "name": "luminara-js",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "pushed_at": "2026-09-28T13:42:16Z",
+      "html_url": "https://github.com/mhamad-code/luminara-js",
+      "fork": false
+    },
+    {
+      "name": "hugeicons-compose",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "pushed_at": "2026-09-25T04:36:03Z",
+      "html_url": "https://github.com/mhamad-code/hugeicons-compose",
+      "fork": true
+    },
+    {
+      "name": "arab-chat-secure",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "pushed_at": "2026-09-22T08:25:39Z",
+      "html_url": "https://github.com/mhamad-code/arab-chat-secure",
+      "fork": false
+    },
+    {
+      "name": "Download-Apk",
+      "description": null,
+      "language": "HTML",
+      "stargazers_count": 0,
+      "pushed_at": "2026-09-16T22:46:27Z",
+      "html_url": "https://github.com/mhamad-code/Download-Apk",
+      "fork": false
+    },
+    {
+      "name": "My-love-",
+      "description": null,
+      "language": "HTML",
+      "stargazers_count": 0,
+      "pushed_at": "2026-07-14T13:18:02Z",
+      "html_url": "https://github.com/mhamad-code/My-love-",
+      "fork": false
+    },
+    {
+      "name": "jlatexmath-android",
+      "description": "LaTeX renderer for Android",
+      "language": null,
+      "stargazers_count": 0,
+      "pushed_at": "2026-07-05T10:10:03Z",
+      "html_url": "https://github.com/mhamad-code/jlatexmath-android",
+      "fork": true
+    },
+    {
+      "name": "markdown",
+      "description": "Markdown parser written in kotlin",
+      "language": null,
+      "stargazers_count": 0,
+      "pushed_at": "2026-06-14T11:12:22Z",
+      "html_url": "https://github.com/mhamad-code/markdown",
+      "fork": true
+    },
+    {
+      "name": "Secret-Keeper",
+      "description": "Repository for https://replit.com/@mhamra148/Secret-Keeper",
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "pushed_at": "2026-05-17T13:38:39Z",
+      "html_url": "https://github.com/mhamad-code/Secret-Keeper",
+      "fork": false
+    },
+    {
+      "name": "sqlite-android",
+      "description": "Android SQLite support library",
+      "language": null,
+      "stargazers_count": 0,
+      "pushed_at": "2026-02-20T07:26:32Z",
+      "html_url": "https://github.com/mhamad-code/sqlite-android",
+      "fork": true
+    },
+    {
+      "name": "code-plus",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 1,
+      "pushed_at": "2026-02-16T23:52:01Z",
+      "html_url": "https://github.com/mhamad-code/code-plus",
+      "fork": false
+    },
+    {
+      "name": "meta-website-Mohamed-Hamra",
+      "description": "هذا موقع تواصل اجتماعي تم تطويره من قبل محمد حمرة هو موقع كامل يحتوي على عمليات تسجيل الدخول وتسجيل مستخدم جديد وإضافة مناشير وتعليق عليه وصفحة بروفايل ",
+      "language": "HTML",
+      "stargazers_count": 1,
+      "pushed_at": "2026-02-08T19:47:51Z",
+      "html_url": "https://github.com/mhamad-code/meta-website-Mohamed-Hamra",
+      "fork": false
+    },
+    {
+      "name": "Mohamed-Hamra-",
+      "description": "هذا هو موقعي الشخصي الذي تعرض أعمالي عليه ويمكنك التواصل معي من هذا الموقع ",
+      "language": "CSS",
+      "stargazers_count": 1,
+      "pushed_at": "2026-01-02T22:53:34Z",
+      "html_url": "https://github.com/mhamad-code/Mohamed-Hamra-",
+      "fork": false
+    },
+    {
+      "name": "Mohamed-Hamra-Portfolio",
+      "description": null,
+      "language": "CSS",
+      "stargazers_count": 1,
+      "pushed_at": "2025-12-30T16:46:12Z",
+      "html_url": "https://github.com/mhamad-code/Mohamed-Hamra-Portfolio",
+      "fork": false
+    }
+  ]
 }

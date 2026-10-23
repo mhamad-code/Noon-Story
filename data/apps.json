@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-23T19:48:55.656Z",
+  "generated": "2026-10-23T22:42:05.268Z",
   "user": "mhamad-code",
   "apps": [
     {
@@ -141,7 +141,7 @@
       "repo": "Nexora",
       "key": "",
       "name": "Nexora",
-      "desc": "",
+      "desc": "نيكسورا 🤖💬 تطبيق ذكاء اصطناعي (LLM) أصيل لنظام أندرويد معتمد بين مختلف المتقدمين والمتطورين الذكاء الاصطناعي بكل سلاسه.  الميزات الرئيسية تعدد المزودين : نسخ مدعومة متعددة (OpenAI, Claude, Google Gemini وغيرها). واجهة المستخدم الحديثة : تم تصميمها وفق معايير تصميم المواد لنظام Android. دعم كامل للغة العربية : واجهة معربة لتجربة تجربة سهلة وبسيطة.",
       "icon": "https://raw.githubusercontent.com/mhamad-code/Nexora/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
       "branch": "main",
       "shots": [
@@ -227,7 +227,7 @@
       "description": null,
       "language": "JavaScript",
       "stargazers_count": 0,
-      "pushed_at": "2026-10-23T15:59:49Z",
+      "pushed_at": "2026-10-23T19:48:56Z",
       "html_url": "https://github.com/mhamad-code/Noon-Story",
       "fork": false
     },
@@ -242,7 +242,7 @@
     },
     {
       "name": "Nexora",
-      "description": null,
+      "description": "نيكسورا 🤖💬 تطبيق ذكاء اصطناعي (LLM) أصيل لنظام أندرويد معتمد بين مختلف المتقدمين والمتطورين الذكاء الاصطناعي بكل سلاسه.  الميزات الرئيسية تعدد المزودين : نسخ مدعومة متعددة (OpenAI, Claude, Google Gemini وغيرها). واجهة المستخدم الحديثة : تم تصميمها وفق معايير تصميم المواد لنظام Android. دعم كامل للغة العربية : واجهة معربة لتجربة تجربة سهلة وبسيطة.",
       "language": "Kotlin",
       "stargazers_count": 0,
       "pushed_at": "2026-10-23T06:55:09Z",

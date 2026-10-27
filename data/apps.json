@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-27T16:44:39.316Z",
+  "generated": "2026-10-27T21:01:49.654Z",
   "user": "mhamad-code",
   "apps": [
     {
@@ -154,32 +154,32 @@
         {
           "name": "app-arm64-v8a-release.apk",
           "url": "https://github.com/mhamad-code/Nexora/releases/download/latest/app-arm64-v8a-release.apk",
-          "size": 36360669,
+          "size": 36370625,
           "dl": 0
         },
         {
           "name": "app-armeabi-v7a-release.apk",
           "url": "https://github.com/mhamad-code/Nexora/releases/download/latest/app-armeabi-v7a-release.apk",
-          "size": 30910703,
-          "dl": 0
+          "size": 30920659,
+          "dl": 4
         },
         {
           "name": "app-universal-release.apk",
           "url": "https://github.com/mhamad-code/Nexora/releases/download/latest/app-universal-release.apk",
-          "size": 50325062,
+          "size": 50335018,
           "dl": 0
         },
         {
           "name": "app-x86_64-release.apk",
           "url": "https://github.com/mhamad-code/Nexora/releases/download/latest/app-x86_64-release.apk",
-          "size": 37030592,
+          "size": 37040548,
           "dl": 0
         }
       ],
-      "notes": "Automated build (commit `159777d27b45f32164b979a3bd06b49accbe2fe8`)\n\n> Based on RikkaHub (AGPL-3.0).\n",
+      "notes": "Automated build (commit `69c0a4497d9a3f2d76356e7b8bdaa5e0fef56167`)\n\n> Based on RikkaHub (AGPL-3.0).\n",
       "updated": "2026-10-15T21:06:47Z",
-      "dl": 0,
-      "size": 36360669,
+      "dl": 4,
+      "size": 36370625,
       "license": "AGPL-3.0",
       "stars": 0,
       "url": "https://github.com/mhamad-code/Nexora",
@@ -190,30 +190,30 @@
           "tag": "latest",
           "name": "Nexora Latest Build",
           "date": "2026-10-15T21:06:47Z",
-          "notes": "Automated build (commit `159777d27b45f32164b979a3bd06b49accbe2fe8`)\n\n> Based on RikkaHub (AGPL-3.0).\n",
+          "notes": "Automated build (commit `69c0a4497d9a3f2d76356e7b8bdaa5e0fef56167`)\n\n> Based on RikkaHub (AGPL-3.0).\n",
           "files": [
             {
               "name": "app-arm64-v8a-release.apk",
               "url": "https://github.com/mhamad-code/Nexora/releases/download/latest/app-arm64-v8a-release.apk",
-              "size": 36360669,
+              "size": 36370625,
               "dl": 0
             },
             {
               "name": "app-armeabi-v7a-release.apk",
               "url": "https://github.com/mhamad-code/Nexora/releases/download/latest/app-armeabi-v7a-release.apk",
-              "size": 30910703,
-              "dl": 0
+              "size": 30920659,
+              "dl": 4
             },
             {
               "name": "app-universal-release.apk",
               "url": "https://github.com/mhamad-code/Nexora/releases/download/latest/app-universal-release.apk",
-              "size": 50325062,
+              "size": 50335018,
               "dl": 0
             },
             {
               "name": "app-x86_64-release.apk",
               "url": "https://github.com/mhamad-code/Nexora/releases/download/latest/app-x86_64-release.apk",
-              "size": 37030592,
+              "size": 37040548,
               "dl": 0
             }
           ]
@@ -223,12 +223,12 @@
   ],
   "repos": [
     {
-      "name": "Noon-Story",
+      "name": "Video-",
       "description": null,
-      "language": "JavaScript",
+      "language": "TypeScript",
       "stargazers_count": 0,
-      "pushed_at": "2026-10-27T11:16:30Z",
-      "html_url": "https://github.com/mhamad-code/Noon-Story",
+      "pushed_at": "2026-10-27T20:14:54Z",
+      "html_url": "https://github.com/mhamad-code/Video-",
       "fork": false
     },
     {
@@ -236,8 +236,17 @@
       "description": "نيكسورا 🤖💬 تطبيق ذكاء اصطناعي (LLM) أصيل لنظام أندرويد معتمد بين مختلف المتقدمين والمتطورين الذكاء الاصطناعي بكل سلاسه.  الميزات الرئيسية تعدد المزودين : نسخ مدعومة متعددة (OpenAI, Claude, Google Gemini وغيرها). واجهة المستخدم الحديثة : تم تصميمها وفق معايير تصميم المواد لنظام Android. دعم كامل للغة العربية : واجهة معربة لتجربة تجربة سهلة وبسيطة.",
       "language": "Kotlin",
       "stargazers_count": 0,
-      "pushed_at": "2026-10-27T08:38:26Z",
+      "pushed_at": "2026-10-27T17:22:40Z",
       "html_url": "https://github.com/mhamad-code/Nexora",
+      "fork": false
+    },
+    {
+      "name": "Noon-Story",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "pushed_at": "2026-10-27T16:44:40Z",
+      "html_url": "https://github.com/mhamad-code/Noon-Story",
       "fork": false
     },
     {

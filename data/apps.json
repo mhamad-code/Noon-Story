@@ -1,58 +1,7 @@
 {
-  "generated": "2026-11-19T08:04:42.060Z",
+  "generated": "2026-11-19T17:27:57.073Z",
   "user": "mhamad-code",
   "apps": [
-    {
-      "repo": "Apk-Acode",
-      "key": "",
-      "name": "Apk Acode",
-      "desc": "",
-      "icon": "https://raw.githubusercontent.com/mhamad-code/Apk-Acode/main/res/logo.png",
-      "branch": "main",
-      "shots": [
-        "https://raw.githubusercontent.com/mhamad-code/Apk-Acode/main/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png",
-        "https://raw.githubusercontent.com/mhamad-code/Apk-Acode/main/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png",
-        "https://raw.githubusercontent.com/mhamad-code/Apk-Acode/main/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png",
-        "https://raw.githubusercontent.com/mhamad-code/Apk-Acode/main/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png",
-        "https://raw.githubusercontent.com/mhamad-code/Apk-Acode/main/fastlane/metadata/android/en-US/images/phoneScreenshots/5.png",
-        "https://raw.githubusercontent.com/mhamad-code/Apk-Acode/main/fastlane/metadata/android/en-US/images/phoneScreenshots/6.png",
-        "https://raw.githubusercontent.com/mhamad-code/Apk-Acode/main/fastlane/metadata/android/en-US/images/phoneScreenshots/7.png",
-        "https://raw.githubusercontent.com/mhamad-code/Apk-Acode/main/fastlane/metadata/android/en-US/images/phoneScreenshots/8.png"
-      ],
-      "apk": [
-        {
-          "name": "Acode-Pro.apk",
-          "url": "https://github.com/mhamad-code/Apk-Acode/releases/download/latest/Acode-Pro.apk",
-          "size": 43219152,
-          "dl": 0
-        }
-      ],
-      "notes": "",
-      "updated": "2026-10-22T10:13:10Z",
-      "dl": 0,
-      "size": 43219152,
-      "license": "MIT",
-      "stars": 0,
-      "url": "https://github.com/mhamad-code/Apk-Acode",
-      "lang": "JavaScript",
-      "ver": "Latest build",
-      "history": [
-        {
-          "tag": "latest",
-          "name": "Latest build",
-          "date": "2026-10-22T10:13:10Z",
-          "notes": "",
-          "files": [
-            {
-              "name": "Acode-Pro.apk",
-              "url": "https://github.com/mhamad-code/Apk-Acode/releases/download/latest/Acode-Pro.apk",
-              "size": 43219152,
-              "dl": 0
-            }
-          ]
-        }
-      ]
-    },
     {
       "repo": "Apk",
       "key": "",
@@ -90,48 +39,6 @@
               "url": "https://github.com/mhamad-code/Apk/releases/download/latest/DeviceX.apk",
               "size": 14282484,
               "dl": 2
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "repo": "SY-ai",
-      "key": "",
-      "name": "SY Ai",
-      "desc": "",
-      "icon": "https://raw.githubusercontent.com/mhamad-code/SY-ai/main/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp",
-      "branch": "main",
-      "shots": [],
-      "apk": [
-        {
-          "name": "SY-ai.apk",
-          "url": "https://github.com/mhamad-code/SY-ai/releases/download/latest/SY-ai.apk",
-          "size": 47039458,
-          "dl": 0
-        }
-      ],
-      "notes": "",
-      "updated": "2026-10-22T10:06:58Z",
-      "dl": 0,
-      "size": 47039458,
-      "license": "MIT",
-      "stars": 0,
-      "url": "https://github.com/mhamad-code/SY-ai",
-      "lang": "Kotlin",
-      "ver": "Latest build",
-      "history": [
-        {
-          "tag": "latest",
-          "name": "Latest build",
-          "date": "2026-10-22T10:06:58Z",
-          "notes": "",
-          "files": [
-            {
-              "name": "SY-ai.apk",
-              "url": "https://github.com/mhamad-code/SY-ai/releases/download/latest/SY-ai.apk",
-              "size": 47039458,
-              "dl": 0
             }
           ]
         }
@@ -227,7 +134,7 @@
       "description": null,
       "language": "JavaScript",
       "stargazers_count": 0,
-      "pushed_at": "2026-11-19T00:38:58Z",
+      "pushed_at": "2026-11-19T08:04:43Z",
       "html_url": "https://github.com/mhamad-code/Noon-Story",
       "fork": false
     },
@@ -268,75 +175,12 @@
       "fork": false
     },
     {
-      "name": "Freebuff",
-      "description": null,
-      "language": "HTML",
-      "stargazers_count": 0,
-      "pushed_at": "2026-11-17T19:49:22Z",
-      "html_url": "https://github.com/mhamad-code/Freebuff",
-      "fork": false
-    },
-    {
-      "name": "VEXORA-Complete-Project-Cloning",
-      "description": null,
-      "language": null,
-      "stargazers_count": 0,
-      "pushed_at": "2026-11-16T14:15:54Z",
-      "html_url": "https://github.com/mhamad-code/VEXORA-Complete-Project-Cloning",
-      "fork": false
-    },
-    {
-      "name": "My-agent",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "pushed_at": "2026-11-15T23:42:17Z",
-      "html_url": "https://github.com/mhamad-code/My-agent",
-      "fork": false
-    },
-    {
-      "name": "agent-ui",
-      "description": null,
-      "language": "HTML",
-      "stargazers_count": 0,
-      "pushed_at": "2026-11-15T13:01:26Z",
-      "html_url": "https://github.com/mhamad-code/agent-ui",
-      "fork": false
-    },
-    {
-      "name": "agents",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "pushed_at": "2026-11-15T10:35:37Z",
-      "html_url": "https://github.com/mhamad-code/agents",
-      "fork": false
-    },
-    {
-      "name": "wc-test",
-      "description": null,
-      "language": "HTML",
-      "stargazers_count": 0,
-      "pushed_at": "2026-11-14T17:01:15Z",
-      "html_url": "https://github.com/mhamad-code/wc-test",
-      "fork": false
-    },
-    {
       "name": "Mohamed-Hamra-",
       "description": "هذا هو موقعي الشخصي الذي تعرض أعمالي عليه ويمكنك التواصل معي من هذا الموقع ",
       "language": "CSS",
       "stargazers_count": 1,
       "pushed_at": "2026-11-14T14:28:34Z",
       "html_url": "https://github.com/mhamad-code/Mohamed-Hamra-",
-      "fork": false
-    },
-    {
-      "name": "code-plus",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 1,
-      "pushed_at": "2026-11-14T14:28:33Z",
-      "html_url": "https://github.com/mhamad-code/code-plus",
       "fork": false
     },
     {
@@ -367,39 +211,12 @@
       "fork": false
     },
     {
-      "name": "Video-",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "pushed_at": "2026-11-14T14:28:30Z",
-      "html_url": "https://github.com/mhamad-code/Video-",
-      "fork": false
-    },
-    {
       "name": "hamra",
       "description": null,
       "language": "JavaScript",
       "stargazers_count": 0,
       "pushed_at": "2026-11-14T14:28:30Z",
       "html_url": "https://github.com/mhamad-code/hamra",
-      "fork": false
-    },
-    {
-      "name": "Ai_platform",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "pushed_at": "2026-11-14T14:28:29Z",
-      "html_url": "https://github.com/mhamad-code/Ai_platform",
-      "fork": false
-    },
-    {
-      "name": "my",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "pushed_at": "2026-11-14T14:28:29Z",
-      "html_url": "https://github.com/mhamad-code/my",
       "fork": false
     },
     {
@@ -412,30 +229,12 @@
       "fork": false
     },
     {
-      "name": "Apk-Acode",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 0,
-      "pushed_at": "2026-11-09T19:36:37Z",
-      "html_url": "https://github.com/mhamad-code/Apk-Acode",
-      "fork": false
-    },
-    {
       "name": "Nexora",
       "description": "نيكسورا 🤖💬 تطبيق ذكاء اصطناعي (LLM) أصيل لنظام أندرويد معتمد بين مختلف المتقدمين والمتطورين الذكاء الاصطناعي بكل سلاسه.  الميزات الرئيسية تعدد المزودين : نسخ مدعومة متعددة (OpenAI, Claude, Google Gemini وغيرها). واجهة المستخدم الحديثة : تم تصميمها وفق معايير تصميم المواد لنظام Android. دعم كامل للغة العربية : واجهة معربة لتجربة تجربة سهلة وبسيطة.",
       "language": "Kotlin",
       "stargazers_count": 0,
       "pushed_at": "2026-11-03T06:48:20Z",
       "html_url": "https://github.com/mhamad-code/Nexora",
-      "fork": false
-    },
-    {
-      "name": "my-chatbot",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "pushed_at": "2026-11-01T22:44:04Z",
-      "html_url": "https://github.com/mhamad-code/my-chatbot",
       "fork": false
     },
     {
@@ -463,15 +262,6 @@
       "stargazers_count": 0,
       "pushed_at": "2026-10-22T10:12:23Z",
       "html_url": "https://github.com/mhamad-code/Apk",
-      "fork": false
-    },
-    {
-      "name": "SY-ai",
-      "description": null,
-      "language": "Kotlin",
-      "stargazers_count": 0,
-      "pushed_at": "2026-10-22T10:06:58Z",
-      "html_url": "https://github.com/mhamad-code/SY-ai",
       "fork": false
     },
     {
@@ -511,30 +301,12 @@
       "fork": true
     },
     {
-      "name": "arab-chat-secure",
-      "description": null,
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "pushed_at": "2026-09-22T08:25:39Z",
-      "html_url": "https://github.com/mhamad-code/arab-chat-secure",
-      "fork": false
-    },
-    {
       "name": "Download-Apk",
       "description": null,
       "language": "HTML",
       "stargazers_count": 0,
       "pushed_at": "2026-09-16T22:46:27Z",
       "html_url": "https://github.com/mhamad-code/Download-Apk",
-      "fork": false
-    },
-    {
-      "name": "My-love-",
-      "description": null,
-      "language": "HTML",
-      "stargazers_count": 0,
-      "pushed_at": "2026-07-14T13:18:02Z",
-      "html_url": "https://github.com/mhamad-code/My-love-",
       "fork": false
     },
     {
@@ -554,15 +326,6 @@
       "pushed_at": "2026-06-14T11:12:22Z",
       "html_url": "https://github.com/mhamad-code/markdown",
       "fork": true
-    },
-    {
-      "name": "Secret-Keeper",
-      "description": "Repository for https://replit.com/@mhamra148/Secret-Keeper",
-      "language": "TypeScript",
-      "stargazers_count": 0,
-      "pushed_at": "2026-05-17T13:38:39Z",
-      "html_url": "https://github.com/mhamad-code/Secret-Keeper",
-      "fork": false
     },
     {
       "name": "sqlite-android",

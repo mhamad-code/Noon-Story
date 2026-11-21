@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21T17:40:13.514Z",
+  "generated": "2026-11-21T22:30:12.826Z",
   "user": "mhamad-code",
   "apps": [
     {
@@ -12,22 +12,36 @@
       "shots": [],
       "apk": [
         {
-          "name": "VEXORA-4.2.apk",
-          "url": "https://github.com/mhamad-code/VEXORA/releases/download/v4.2/VEXORA-4.2.apk",
-          "size": 69204959,
-          "dl": 1
+          "name": "VEXORA-4.3.apk",
+          "url": "https://github.com/mhamad-code/VEXORA/releases/download/v4.3/VEXORA-4.3.apk",
+          "size": 69205123,
+          "dl": 2
         }
       ],
-      "notes": "VEXORA 4.2 (versionCode 42)\n\n- Package: com.androidharness.app\n- SHA-256: a3bf6bbd6707737ea8bc7e586fffd2f348210f66ade094dedf76789f57932f4b\n- Signer: unknown",
-      "updated": "2026-11-21T16:59:13Z",
-      "dl": 1,
-      "size": 69204959,
+      "notes": "VEXORA 4.3 (versionCode 43)\n\n- Package: com.androidharness.app\n- SHA-256: a514f460db2a31e6c790f2a258f816215e38b683abf1d3a5c9711fb6068adb02\n- Signer: unknown",
+      "updated": "2026-11-21T19:52:17Z",
+      "dl": 2,
+      "size": 69205123,
       "license": "MIT",
       "stars": 0,
       "url": "https://github.com/mhamad-code/VEXORA",
       "lang": "Kotlin",
-      "ver": "VEXORA 4.2",
+      "ver": "VEXORA 4.3",
       "history": [
+        {
+          "tag": "v4.3",
+          "name": "VEXORA 4.3",
+          "date": "2026-11-21T19:52:17Z",
+          "notes": "VEXORA 4.3 (versionCode 43)\n\n- Package: com.androidharness.app\n- SHA-256: a514f460db2a31e6c790f2a258f816215e38b683abf1d3a5c9711fb6068adb02\n- Signer: unknown",
+          "files": [
+            {
+              "name": "VEXORA-4.3.apk",
+              "url": "https://github.com/mhamad-code/VEXORA/releases/download/v4.3/VEXORA-4.3.apk",
+              "size": 69205123,
+              "dl": 2
+            }
+          ]
+        },
         {
           "tag": "v4.2",
           "name": "VEXORA 4.2",
@@ -38,7 +52,7 @@
               "name": "VEXORA-4.2.apk",
               "url": "https://github.com/mhamad-code/VEXORA/releases/download/v4.2/VEXORA-4.2.apk",
               "size": 69204959,
-              "dl": 1
+              "dl": 2
             }
           ]
         },
@@ -186,12 +200,30 @@
   ],
   "repos": [
     {
+      "name": "claude-code-cloud-template",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "pushed_at": "2026-11-21T21:16:51Z",
+      "html_url": "https://github.com/mhamad-code/claude-code-cloud-template",
+      "fork": false
+    },
+    {
       "name": "VEXORA",
       "description": null,
       "language": "Kotlin",
       "stargazers_count": 0,
-      "pushed_at": "2026-11-21T16:36:03Z",
+      "pushed_at": "2026-11-21T19:29:28Z",
       "html_url": "https://github.com/mhamad-code/VEXORA",
+      "fork": false
+    },
+    {
+      "name": "Noon-Story",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "pushed_at": "2026-11-21T17:40:14Z",
+      "html_url": "https://github.com/mhamad-code/Noon-Story",
       "fork": false
     },
     {
@@ -201,15 +233,6 @@
       "stargazers_count": 0,
       "pushed_at": "2026-11-21T11:07:55Z",
       "html_url": "https://github.com/mhamad-code/Freecode",
-      "fork": false
-    },
-    {
-      "name": "Noon-Story",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 0,
-      "pushed_at": "2026-11-21T02:53:37Z",
-      "html_url": "https://github.com/mhamad-code/Noon-Story",
       "fork": false
     },
     {
@@ -364,6 +387,15 @@
       "pushed_at": "2026-09-16T22:46:27Z",
       "html_url": "https://github.com/mhamad-code/Download-Apk",
       "fork": false
+    },
+    {
+      "name": "Amplify",
+      "description": "An OpenSource Alternative to Claude Chat's messages, skills and artifacts and workspace.",
+      "language": null,
+      "stargazers_count": 0,
+      "pushed_at": "2026-08-07T14:34:46Z",
+      "html_url": "https://github.com/mhamad-code/Amplify",
+      "fork": true
     },
     {
       "name": "jlatexmath-android",

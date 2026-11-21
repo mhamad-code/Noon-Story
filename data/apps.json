@@ -1,7 +1,63 @@
 {
-  "generated": "2026-11-21T02:53:36.632Z",
+  "generated": "2026-11-21T17:40:13.514Z",
   "user": "mhamad-code",
   "apps": [
+    {
+      "repo": "VEXORA",
+      "key": "",
+      "name": "VEXORA",
+      "desc": "",
+      "icon": "https://raw.githubusercontent.com/mhamad-code/VEXORA/main/.github/assets/icon.png",
+      "branch": "main",
+      "shots": [],
+      "apk": [
+        {
+          "name": "VEXORA-4.2.apk",
+          "url": "https://github.com/mhamad-code/VEXORA/releases/download/v4.2/VEXORA-4.2.apk",
+          "size": 69204959,
+          "dl": 1
+        }
+      ],
+      "notes": "VEXORA 4.2 (versionCode 42)\n\n- Package: com.androidharness.app\n- SHA-256: a3bf6bbd6707737ea8bc7e586fffd2f348210f66ade094dedf76789f57932f4b\n- Signer: unknown",
+      "updated": "2026-11-21T16:59:13Z",
+      "dl": 1,
+      "size": 69204959,
+      "license": "MIT",
+      "stars": 0,
+      "url": "https://github.com/mhamad-code/VEXORA",
+      "lang": "Kotlin",
+      "ver": "VEXORA 4.2",
+      "history": [
+        {
+          "tag": "v4.2",
+          "name": "VEXORA 4.2",
+          "date": "2026-11-21T16:59:13Z",
+          "notes": "VEXORA 4.2 (versionCode 42)\n\n- Package: com.androidharness.app\n- SHA-256: a3bf6bbd6707737ea8bc7e586fffd2f348210f66ade094dedf76789f57932f4b\n- Signer: unknown",
+          "files": [
+            {
+              "name": "VEXORA-4.2.apk",
+              "url": "https://github.com/mhamad-code/VEXORA/releases/download/v4.2/VEXORA-4.2.apk",
+              "size": 69204959,
+              "dl": 1
+            }
+          ]
+        },
+        {
+          "tag": "v4.1",
+          "name": "VEXORA 4.1",
+          "date": "2026-11-21T15:10:22Z",
+          "notes": "VEXORA 4.1 (versionCode 41)\n\n- Package: com.androidharness.app\n- SHA-256: 11488263bf6ea6cf78d4ad9d490a5c203930cd6f6f797303fb4c64084f5ff8b1\n- Signer: unknown",
+          "files": [
+            {
+              "name": "VEXORA-4.1.apk",
+              "url": "https://github.com/mhamad-code/VEXORA/releases/download/v4.1/VEXORA-4.1.apk",
+              "size": 69204959,
+              "dl": 5
+            }
+          ]
+        }
+      ]
+    },
     {
       "repo": "Apk",
       "key": "",
@@ -130,12 +186,30 @@
   ],
   "repos": [
     {
+      "name": "VEXORA",
+      "description": null,
+      "language": "Kotlin",
+      "stargazers_count": 0,
+      "pushed_at": "2026-11-21T16:36:03Z",
+      "html_url": "https://github.com/mhamad-code/VEXORA",
+      "fork": false
+    },
+    {
       "name": "Freecode",
       "description": null,
       "language": "TypeScript",
       "stargazers_count": 0,
-      "pushed_at": "2026-11-21T00:07:31Z",
+      "pushed_at": "2026-11-21T11:07:55Z",
       "html_url": "https://github.com/mhamad-code/Freecode",
+      "fork": false
+    },
+    {
+      "name": "Noon-Story",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "pushed_at": "2026-11-21T02:53:37Z",
+      "html_url": "https://github.com/mhamad-code/Noon-Story",
       "fork": false
     },
     {
@@ -145,24 +219,6 @@
       "stargazers_count": 0,
       "pushed_at": "2026-11-21T00:01:16Z",
       "html_url": "https://github.com/mhamad-code/developer-hub-storage",
-      "fork": false
-    },
-    {
-      "name": "Noon-Story",
-      "description": null,
-      "language": "JavaScript",
-      "stargazers_count": 0,
-      "pushed_at": "2026-11-20T21:35:19Z",
-      "html_url": "https://github.com/mhamad-code/Noon-Story",
-      "fork": false
-    },
-    {
-      "name": "VEXORA",
-      "description": null,
-      "language": "Kotlin",
-      "stargazers_count": 0,
-      "pushed_at": "2026-11-20T21:11:42Z",
-      "html_url": "https://github.com/mhamad-code/VEXORA",
       "fork": false
     },
     {
